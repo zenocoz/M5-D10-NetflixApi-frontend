@@ -18,7 +18,8 @@ class Gallery extends React.Component {
     //set the constructor according to the resul
 
     let response = await fetch(
-      `http://www.omdbapi.com/?apikey=a0871843&s=${query}`
+      // `http://www.omdbapi.com/?apikey=a0871843&s=${query}`
+      "http://localhost:3001/media"
     )
 
     if (response.ok) {
